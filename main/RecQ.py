@@ -1,4 +1,5 @@
 import sys
+sys.path.append('../')
 from re import split
 from tool.config import Config,LineConfig
 from tool.file import FileIO
@@ -6,7 +7,8 @@ from evaluation.dataSplit import *
 from multiprocessing import Process,Manager
 from tool.file import FileIO
 from time import strftime,localtime,time
-import mkl
+
+# import mkl
 class RecQ(object):
     def __init__(self,config):
         self.trainingData = []  # training data
